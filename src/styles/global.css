@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'AvenirMedium';
+    src: url('/fonts/avenir/AvenirLTStd-Roman.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AvenirLight';
+    src: url('/fonts/avenir/AvenirLTStd-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AvenirBold';
+    src: url('/fonts/avenir/AvenirLTStd-Black.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'AvantMedium';
+    src: url('/fonts/avenir/AvenirLTStd-Black.otf') format('opentype');
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 40px !important;
+    height: 40px !important;
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+    background-position: center;
+}
+
+.swiper-button-next {
+    background-image: url(/icons/slider-right-icon.svg);
+}
+
+.swiper-button-prev {
+    background-image: url(/icons/slider-left-icon.svg);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: .5;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.product-slider--container {
+    padding-left: 120px;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    padding-right: 70px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .product-slider--container {
+        padding-left: 24px;
+        position: absolute;
+        top: 32px;
+        padding-right: 50px;
+    }
+}
